@@ -9,7 +9,7 @@ hello();
 
 const today=dayjs();
 const deliveryDate=today.add(7, 'days');
-deliveryDate.format('dddd, MMMM D');
+console.log(deliveryDate.format('dddd, MMMM D'));
 
 let cartSummaryHTML='';
 
