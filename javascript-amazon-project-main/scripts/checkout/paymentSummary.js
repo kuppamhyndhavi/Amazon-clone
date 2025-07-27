@@ -17,9 +17,9 @@ export function renderPaymentSummary() {
 
  });
 
- const totalBeforeTaxcents = productPriceCents+shippingPriceCents;
+ const totalBeforeTaxCents = productPriceCents+shippingPriceCents;
  const taxCents= totalBeforeTaxCents * 0.1;
- const totalcents= totalBeforeTaxCents + taxCents;
+ const totalCents= totalBeforeTaxCents + taxCents;
 
  const paymentSummaryHTML=`
  <div class="payment-summary-title">
@@ -38,7 +38,7 @@ export function renderPaymentSummary() {
 
           <div class="payment-summary-row subtotal-row">
             <div>Total before tax:</div>
-            <div class="payment-summary-money">$${formatCurrency(totalBeforeTaxcents)}</div>
+            <div class="payment-summary-money">$${formatCurrency(totalBeforeTaxCents)}</div>
           </div>
 
           <div class="payment-summary-row">
